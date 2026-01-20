@@ -8,6 +8,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 from scipy.optimize import bisect
 from scipy.stats import linregress
+import csv
 
 alpha = 5.21e-3
 beta = 7.2e-7
@@ -76,4 +77,7 @@ plt.legend(loc="lower right")
 plt.show()
 
 print(f"Slope = {slope:.2f}")
-print(f"y-intercept = {intercept:.2f}")
+print(f"Stefan's Const= {np.log(intercept):.2f}")
+
+data = np.column_stack((V, I, dR, dT))
+np.savetxt("data.csv", data, delimiter=",", header="V,I,dR,dT", comments="", fmt="%.3f")
