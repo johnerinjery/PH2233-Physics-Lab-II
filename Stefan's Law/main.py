@@ -1,5 +1,5 @@
 """
-PH2233 Physics Lab I — January 2026
+PH2233 Physics Lab II — January 2026
 Code used in lab for Stefan's Law experiment.
 Refer Pg. 6 in the Lab Manual (LM)
 """
