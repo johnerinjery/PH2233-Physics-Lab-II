@@ -14,11 +14,11 @@ alpha = 5.21e-3
 beta = 7.2e-7
 T_G = 800  # K
 
-V = np.array([1.5, 2.5, 3.5, 4.5, 5.5, 6.5])
-I = np.array([0.32, 0.44, 0.55, 0.64, 0.72, 0.78])
+V = np.array([...])
+I = np.array([...])
 
-dV = 0.01  # volts
-dA = 0.01  # amps
+dV = 0.01
+dA = 0.01
 
 # Resistance Calculations
 R = V / I
@@ -63,7 +63,7 @@ dlogP = dP / P
 
 plt.errorbar(logT, logP, xerr=dlogT, yerr=dlogP, fmt="o", capsize=3, label="Data")
 
-slope, intercept, *_ = linregress(logT, logP)
+slope, intercept, r_value, p_value, slope_err = linregress(logT, logP)
 xfit = np.linspace(min(logT), max(logT), 100)
 yfit = slope * xfit + intercept
 
@@ -76,8 +76,8 @@ plt.ylabel(r"$\log P$")
 plt.legend(loc="lower right")
 plt.show()
 
-print(f"Slope = {slope:.2f}")
-print(f"Stefan's Const= {np.log(intercept):.2f}")
+print(f"Slope = {slope:.2f}\nError: {slope_err:.2f}")
+print(f"Proportionality Constant= {np.exp(intercept):.2f}")
 
 data = np.column_stack((V, I, dR, dT))
 np.savetxt("data.csv", data, delimiter=",", header="V,I,dR,dT", comments="", fmt="%.3f")
