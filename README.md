@@ -4,7 +4,7 @@ PH2233 is a Physics Lab course offered at IISER Pune for the January 2026 semest
 
 ### List of Experiments
 
-1. Brewster’s Angle
+1. <span style="color: #83f28f">Brewster’s Angle</span>
 2. Michelson Interferometer
 3. Thermal expansion
 4. Specific heat
