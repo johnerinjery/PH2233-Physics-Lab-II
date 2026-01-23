@@ -44,3 +44,7 @@ ax.set_ylabel("Intensity (mico amp)")
 ax.grid()
 ax.legend()
 plt.show()
+
+print(f"Mean of Intensities: {np.round(I_mean, 1)}")
+print(f"Standard Deviation of Intensities: {np.round(I_std, 1)}")
+print(f"Standard Error of Intensities: {np.round(I_err, 1)}")

@@ -15,7 +15,7 @@ https://www.youtube.com/watch?v=Wqf1KufGGL4
 
 Key things to note:
 
-- Light is an EM Wave, with mutually perpendicular electric and magnetic waves. If we know the way either one is oriented, the other will always be in the orthogonal direction. Whenever we study polarization,
+- Light is an EM Wave, with mutually perpendicular electric and magnetic waves. If we know the way either one is oriented, the other will always be in the orthogonal direction. Whenever we study polarization, we talk only about the plane of oscillation of the electric field.
 - The electric fields in unpolarized light are oriented uniformly in all possible orientations. A polarizer only allows the electric fields along its axis to go through, thereby restricting the orientation of electric fields to a single plane — _polarizing_ it.
 - A polarizer and an analyzer are made of the same material, the one the light passes through first is named polarizer, and the other the analyzer.
 - The intensity of light after passing though the polarizer-analyzer setup depends on the relative orientation of their axes, a principle know as _Malu's Law_.
