@@ -7,6 +7,7 @@ GREEN_WAVELEN = 532e-9
 d = 8.5e-2
 dd = 1e-3
 ATMOS_P = 101325
+
 # Wavelenght of laser  beam
 fringe_num = np.array([20, 25, 30, 35])
 micrometer_dis = np.array([0.35, 0.45, 0.53, 0.63]) * 10e5
