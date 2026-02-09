@@ -15,4 +15,4 @@ PH2233 is a Physics Lab course offered at IISER Pune for the January 2026 semest
 9. Photoelectric effect
 10. Millikan’s oil drop
 
-For this January 2026 Semester, the course evaluation is 35% for both Endsem and Midsem practical exams, 20% for lab note and viva (by faculty) and 10% for lab note and viva (By TA).
+For this January 2026 Semester, the course evaluation is 35% for both Endsem and Midsem practical exams, 20% for lab note and viva (by faculty) and 10% for lab note and viva (By the TA).
