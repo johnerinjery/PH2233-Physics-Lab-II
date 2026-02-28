@@ -14,8 +14,8 @@ alpha = 5.21e-3
 beta = 7.2e-7
 T_G = 800  # K
 
-V = np.array([...])
-I = np.array([...])
+V = np.array([1.20, 1.80, 2.50, 3.50, 4.80, 6.20, 8.00, 10.0])
+I = np.array([0.45, 0.52, 0.58, 0.65, 0.72, 0.78, 0.84, 0.90])
 
 dV = 0.01
 dA = 0.01
@@ -29,7 +29,7 @@ R_0 = R[0] / (1 + alpha * T_G + beta * (T_G**2))
 # Temperature Calculation
 def temp_from_resistance(R):
     func = lambda T: R_0 * (1 + alpha * T + beta * T**2) - R
-    return bisect(func, 300, 3000)
+    return bisect(func, 300, 3500)
 
 
 def temp_and_dt(R, dR):
